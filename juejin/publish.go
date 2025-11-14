@@ -1,9 +1,14 @@
 package juejin
 
-func (j *JueJin) PublishArticle() error {
-	// page := rod.New().MustPages().First().MustNavigate("https://juejin.cn/editor/drafts/new?v=2")
-	// page.MustWaitLoad()
+import (
+	"github.com/go-rod/rod"
+	"github.com/go-rod/rod/lib/launcher"
+)
 
-	// fmt.Println(page.MustInfo().URL)
+func (j *JueJin) PublishArticle() error {
+	bin, _ := launcher.LookPath()
+	u := launcher.New().Bin(bin).Set("headless").Delete("--headless").MustLaunch()
+	page := rod.New().ControlURL(u).MustConnect().MustPage("https://juejin.cn/editor/drafts/new?v=2")
+	page.MustWaitLoad()
 	return nil
 }
