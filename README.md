@@ -1,10 +1,9 @@
-cmd
-  app
-  main
-
+app
+main
+routes
 browser
   browser
-  
+
 juejin
   juejin
   ...Name
@@ -17,5 +16,8 @@ middleware
   ...Name
 
 configs
-  configs
+  ...Name
 
+docker
+
+scripts
