@@ -21,6 +21,12 @@ func initMCP() *goMcp.Server {
 		Description: "登录掘金",
 	}, loginTool)
 
+	// 添加发布工具
+	goMcp.AddTool(server, &goMcp.Tool{
+		Name:        "publish",
+		Description: "发布文章",
+	}, publishTool)
+
 	return server
 }
 

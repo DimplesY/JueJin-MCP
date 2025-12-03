@@ -25,3 +25,21 @@ func loginTool(ctx context.Context, _req *goMcp.CallToolRequest, _ any) (
 
 	return nil, nil, nil
 }
+
+func publishTool(ctx context.Context, _req *goMcp.CallToolRequest, _ any) (
+	*goMcp.CallToolResult,
+	any,
+	error,
+) {
+	b := browser.New()
+	defer b.Close()
+
+	p := b.MustPage()
+	defer p.Close()
+
+	if err := juejin.Publish(p, ctx); err != nil {
+		return nil, nil, err
+	}
+
+	return nil, nil, nil
+}
