@@ -13,7 +13,7 @@
 
 Cursor 配置: `Settings` -> `Cursor Settings` -> `MCP` -> `Add new global MCP server`
 
-将以下配置粘贴到您的 Cursor `~/.cursor/mcp.json` 文件中是推荐的方法。您也可以通过在项目文件夹中创建来在特定项目中安装。. 查看 [Cursor MCP docs](https://docs.cursor.com/context/model-context-protocol) for more info.
+将以下配置粘贴到您的 Cursor `~/.cursor/mcp.json` 文件中是推荐的方法。您也可以通过在项目文件夹中创建来在特定项目中安装。. 查看 [Cursor MCP docs](https://docs.cursor.com/context/model-context-protocol) 获取更多.
 
 > 自 Cursor 1.0 以来，您可以点击下面的安装按钮进行一键快速安装。
 
