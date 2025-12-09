@@ -1,5 +1,11 @@
 # MCP for JueJin
 
+<div align="center">
+  <img src="./assets/mcp.svg" alt="Uno MCP" height="100" />
+  <span style="font-size: 60px;">+</span>
+  <img src="./assets/juejin.svg" alt="JueJin Logo" height="100" />
+</div>
+
 <p align="center">
   <strong>JueJin-MCP是一个能让AI生成的文章自动发布到掘金的工具</strong>
 </p>
